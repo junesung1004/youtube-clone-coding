@@ -1,0 +1,108 @@
+.h-container {
+  position: fixed;
+  width: 100%;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header-color);
+}
+
+.h-container-menubar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.h-container-menubar:hover i,
+img {
+  cursor: pointer;
+}
+
+.h-container-menubar i:hover {
+  background-color: var(--header-icon-color);
+  border-radius: 50%;
+}
+
+.h-container-searchbar {
+  display: flex;
+  justify-content: center;
+  width: 536px;
+  height: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.h-container-searchbar:hover {
+  cursor: pointer;
+}
+
+.search-text-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  padding-left: 25px;
+  border: 1px solid var(--header-icon-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.search-boxicon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  width: 64px;
+  height: 100%;
+
+  background-color: var(--search-color);
+  border: 1px solid var(--header-icon-color);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  box-sizing: border-box;
+
+  padding-right: 18px;
+}
+
+.h-container-mypage {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.h-container-mypage img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.mypage-icon:hover {
+  cursor: pointer;
+}
+
+.mypage-icon i:hover {
+  background-color: var(--header-icon-color);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .h-container-searchbar {
+    width: 30%;
+  }
+
+  
+}
