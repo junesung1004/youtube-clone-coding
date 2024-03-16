@@ -47,6 +47,10 @@ img {
   height: 100%;
 }
 
+.search-text-wrap:hover input {
+  border-color: blue;
+}
+
 input {
   padding-left: 25px;
   border: 1px solid var(--header-icon-color);
@@ -103,6 +107,4 @@ input {
   .h-container-searchbar {
     width: 30%;
   }
-
-  
 }

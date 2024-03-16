@@ -1,12 +1,16 @@
-const korean = 50;
-const english = 92;
+const mypageBtn = document.querySelector("#mypageBtn");
 
-if(korean >= 90 && english >= 90) {
-  console.log('a학점')
-} else if (korean + english >= 170) {
-  console.log('b학점')
-} else if (korean >= 90 || english >=90) {
-  console.log('c학점')
-} else {
-  console.log('나머지는 모두 d학점')
-}
+//마이 페이지 이동 버튼 로직
+const mypage = () => {
+  // 클릭했을 때 mypage.html 링크 이동 하는 코드
+  window.location.href = "mypage.html";
+};
+
+mypageBtn.addEventListener("click", mypage);
+
+const searchIcon = document.querySelector(".bx.bx-search");
+const searchInput = document.querySelector(".search-text-wrap input");
+
+searchIcon.addEventListener("click", () => {
+  searchInput.focus();
+});
