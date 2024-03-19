@@ -88,11 +88,31 @@ main {
     width: 40%;
     height: fit-content;
   }
+  .a-container {
+    width: 50px;
+  }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
+  body {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  main {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
   #video-container {
-    width: 60%;
+    width: 100%;
     height: fit-content;
+  }
+
+  .a-container {
+    display: none;
+  }
+
+  .h-container-searchbar {
+    display: none;
   }
 }
